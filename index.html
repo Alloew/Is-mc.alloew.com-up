@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Is mc.alloew.com up?</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="row">
+        <div>Is mc.alloew.com up?</div>
+        <div id="load" class="loading">Loading...</div>
+        <div id="yes" style="display: none;" class="success">Yes</div>
+        <div id="no" style="display: none;" class="failure">No</div>
+    </div>
+    <div class="preview" id="preview">
+        <img id="icon" src="" alt="icon">
+        <div class="vertRow">
+            <div class="row1">
+                <span id="title">Minecraft Server</span>
+                <div class="w"></div>
+                <span id="players">
+                    <span id="playerNum" class="d1">...</span>/<span id="maxPlayers" class="d1">...</span>
+                </span>
+            </div>
+            <div class="row2" id="motd"></div>
+        </div>
+    </div>
+    <span id="d" class="d">*Updates roughly every 2.5 seconds</span>
+    <script src="script.js"></script>
+</body>
+
+</html>

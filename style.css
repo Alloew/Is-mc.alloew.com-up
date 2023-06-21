@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Comic Sans MS'), local('ComicSansMS-Regular'),
+        url(https://allfont.ru/cache/fonts/comic-sans-ms_53a8778a817839ef2dbc5dc94ce14334.woff) format('woff'),
+        url(https://allfont.ru/cache/fonts/comic-sans-ms_53a8778a817839ef2dbc5dc94ce14334.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('Minecraftia.woff2') format('woff2'),
+        url('Minecraftia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background: hsl(0, 0%, 0%);
+    color: hsl(215, 15%, 95%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+.success {
+    color: #25f602;
+}
+
+.failure {
+    color: #ff0000;
+}
+
+.loading {
+    color: #8c8c8c;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.preview {
+    display: none;
+    flex-direction: row;
+    font-family: 'Minecraftia', sans-serif;
+    word-spacing: -3px;
+    margin-top: 1.5rem;
+    width: 600px;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+.vertRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#title {
+    margin: 0;
+    font-size: 16px;
+    line-height: calc(16px);
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+
+}
+
+#icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 6px;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+#players {
+    color: rgb(85, 85, 85);
+    margin-left: auto;
+    line-height: calc(1.5rem - 6px);
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+.d1 {
+    color: rgb(170, 170, 170);
+}
+
+#motd {
+    font-size: 16px;
+    line-height: calc(16px + 8px);
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+.d {
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+}
