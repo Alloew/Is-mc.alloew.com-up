@@ -6,6 +6,7 @@ var current = document.getElementById("playerNum");
 var max = document.getElementById("maxPlayers");
 var motd = document.getElementById("motd");
 var p = document.getElementById("preview");
+var players = document.getElementById("playersList");
 
 function getStatus() {
     var url = "https://api.mcstatus.io/v2/status/java/mc.alloew.com";
@@ -24,11 +25,19 @@ function getStatus() {
 
                 motd.innerHTML = json.motd.html;
 
-                if (json.players.current > 0){
-                    var players = json.players.list;
+                var tempHTML = "";
+
+                if (json.players.online > 0) {
+                    tempHTML += "<h3 class='playersTitle'>Players:</h3>";
+                    var playersL = json.players.list;
+                    for (var i = 0; i < playersL.length; i++) {
+                        tempHTML += playersL[i].name_html;
+                    }
+                    console.log(tempHTML);
+                    players.innerHTML = tempHTML;
                 }
             }
-            else{
+            else {
                 load.style.display = "none";
                 yes.style.display = "none";
                 no.style.display = "flex";

@@ -115,3 +115,18 @@ body {
     right: 6px;
     bottom: 6px;
 }
+
+.playersList{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Minecraftia', sans-serif;
+    margin-top: 2rem;
+    width: 600px;
+    font-size: 14px;
+}
+
+.playersTitle{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 24px;
+    font-weight: normal;
+}
