@@ -9,7 +9,7 @@ var p = document.getElementById("preview");
 var players = document.getElementById("playersList");
 
 function getStatus() {
-    var url = "https://api.mcstatus.io/v2/status/java/mc.alloew.com";
+    var url = "https://api.mcstatus.io/v2/status/java/gw.alloew.com";
     fetch(url).then((res) => {
         res.json().then((json) => {
             if (json.online == true) {
